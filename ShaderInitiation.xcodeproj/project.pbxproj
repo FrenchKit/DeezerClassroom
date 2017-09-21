@@ -1,0 +1,461 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7A172FE51F6E71DA00F68E9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A172FE41F6E71DA00F68E9F /* AppDelegate.swift */; };
+		7A172FE71F6E71DA00F68E9F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A172FE61F6E71DA00F68E9F /* ViewController.swift */; };
+		7A172FEA1F6E71DA00F68E9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A172FE81F6E71DA00F68E9F /* Main.storyboard */; };
+		7A172FEC1F6E71DA00F68E9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A172FEB1F6E71DA00F68E9F /* Assets.xcassets */; };
+		7A172FEF1F6E71DA00F68E9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A172FED1F6E71DA00F68E9F /* LaunchScreen.storyboard */; };
+		7A1730151F6E76E600F68E9F /* FastFloatVectorMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A17300E1F6E76E600F68E9F /* FastFloatVectorMath.swift */; };
+		7A1730161F6E76E600F68E9F /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A17300F1F6E76E600F68E9F /* Geometry.swift */; };
+		7A1730171F6E76E600F68E9F /* NoiseTexture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1730101F6E76E600F68E9F /* NoiseTexture.swift */; };
+		7A1730181F6E76E600F68E9F /* ShaderProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1730111F6E76E600F68E9F /* ShaderProgram.swift */; };
+		7A1730191F6E76E600F68E9F /* TextureLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1730121F6E76E600F68E9F /* TextureLoader.swift */; };
+		7A17301A1F6E76E600F68E9F /* Uniformizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1730131F6E76E600F68E9F /* Uniformizable.swift */; };
+		7A17301C1F6E76FF00F68E9F /* FilteredData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A17301B1F6E76FF00F68E9F /* FilteredData.swift */; };
+		7A17301E1F6E7B8000F68E9F /* FFT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A17301D1F6E7B8000F68E9F /* FFT.swift */; };
+		7A4BC4C31F719EBC0063FB97 /* bensound-acousticbreeze.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A4BC4BD1F719EBC0063FB97 /* bensound-acousticbreeze.mp3 */; };
+		7A4BC4C41F719EBC0063FB97 /* bensound-buddy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A4BC4BE1F719EBC0063FB97 /* bensound-buddy.mp3 */; };
+		7A4BC4C51F719EBC0063FB97 /* bensound-cute.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A4BC4BF1F719EBC0063FB97 /* bensound-cute.mp3 */; };
+		7A4BC4C61F719EBC0063FB97 /* bensound-dubstep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A4BC4C01F719EBC0063FB97 /* bensound-dubstep.mp3 */; };
+		7A4BC4C71F719EBC0063FB97 /* bensound-epic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A4BC4C11F719EBC0063FB97 /* bensound-epic.mp3 */; };
+		7A4BC4C81F719EBC0063FB97 /* bensound-funnysong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A4BC4C21F719EBC0063FB97 /* bensound-funnysong.mp3 */; };
+		7AAA31721F74562000FFB69C /* EX_2.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 7AAA31701F74562000FFB69C /* EX_2.fsh */; };
+		7AAA31731F74562000FFB69C /* EX_2.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 7AAA31711F74562000FFB69C /* EX_2.vsh */; };
+		7AAA31761F74598600FFB69C /* EX_3.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 7AAA31741F74598500FFB69C /* EX_3.fsh */; };
+		7AAA31771F74598600FFB69C /* EX_3.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 7AAA31751F74598500FFB69C /* EX_3.vsh */; };
+		7AAA317A1F745D7900FFB69C /* EX_4.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 7AAA31781F745D7900FFB69C /* EX_4.vsh */; };
+		7AAA317B1F745D7900FFB69C /* EX_4.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 7AAA31791F745D7900FFB69C /* EX_4.fsh */; };
+		7AAA317E1F745F1400FFB69C /* EX_5.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 7AAA317C1F745F1400FFB69C /* EX_5.fsh */; };
+		7AAA317F1F745F1400FFB69C /* EX_5.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 7AAA317D1F745F1400FFB69C /* EX_5.vsh */; };
+		7AAA31821F74681000FFB69C /* EX_6.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 7AAA31801F74681000FFB69C /* EX_6.fsh */; };
+		7AAA31831F74681000FFB69C /* EX_6.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 7AAA31811F74681000FFB69C /* EX_6.vsh */; };
+		7ACBCECB1F74537D0072A86A /* EX_1.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 7ACBCEC91F74537D0072A86A /* EX_1.fsh */; };
+		7ACBCECC1F74537D0072A86A /* EX_1.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 7ACBCECA1F74537D0072A86A /* EX_1.vsh */; };
+		7ADDE9881F746EC1008DD859 /* ShaderDemo.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 7ADDE9861F746EC1008DD859 /* ShaderDemo.fsh */; };
+		7ADDE9891F746EC1008DD859 /* ShaderDemo.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 7ADDE9871F746EC1008DD859 /* ShaderDemo.vsh */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7A172FE11F6E71DA00F68E9F /* ShaderInitiation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShaderInitiation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A172FE41F6E71DA00F68E9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7A172FE61F6E71DA00F68E9F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7A172FE91F6E71DA00F68E9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7A172FEB1F6E71DA00F68E9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7A172FEE1F6E71DA00F68E9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7A172FF01F6E71DA00F68E9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A17300E1F6E76E600F68E9F /* FastFloatVectorMath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FastFloatVectorMath.swift; path = logic/FastFloatVectorMath.swift; sourceTree = "<group>"; };
+		7A17300F1F6E76E600F68E9F /* Geometry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Geometry.swift; path = logic/Geometry.swift; sourceTree = "<group>"; };
+		7A1730101F6E76E600F68E9F /* NoiseTexture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NoiseTexture.swift; path = logic/NoiseTexture.swift; sourceTree = "<group>"; };
+		7A1730111F6E76E600F68E9F /* ShaderProgram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShaderProgram.swift; path = logic/ShaderProgram.swift; sourceTree = "<group>"; };
+		7A1730121F6E76E600F68E9F /* TextureLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TextureLoader.swift; path = logic/TextureLoader.swift; sourceTree = "<group>"; };
+		7A1730131F6E76E600F68E9F /* Uniformizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Uniformizable.swift; path = logic/Uniformizable.swift; sourceTree = "<group>"; };
+		7A17301B1F6E76FF00F68E9F /* FilteredData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FilteredData.swift; path = logic/FilteredData.swift; sourceTree = "<group>"; };
+		7A17301D1F6E7B8000F68E9F /* FFT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FFT.swift; path = logic/FFT.swift; sourceTree = "<group>"; };
+		7A4BC4BD1F719EBC0063FB97 /* bensound-acousticbreeze.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bensound-acousticbreeze.mp3"; sourceTree = "<group>"; };
+		7A4BC4BE1F719EBC0063FB97 /* bensound-buddy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bensound-buddy.mp3"; sourceTree = "<group>"; };
+		7A4BC4BF1F719EBC0063FB97 /* bensound-cute.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bensound-cute.mp3"; sourceTree = "<group>"; };
+		7A4BC4C01F719EBC0063FB97 /* bensound-dubstep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bensound-dubstep.mp3"; sourceTree = "<group>"; };
+		7A4BC4C11F719EBC0063FB97 /* bensound-epic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bensound-epic.mp3"; sourceTree = "<group>"; };
+		7A4BC4C21F719EBC0063FB97 /* bensound-funnysong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bensound-funnysong.mp3"; sourceTree = "<group>"; };
+		7AAA31701F74562000FFB69C /* EX_2.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = EX_2.fsh; path = shaders/EX_2.fsh; sourceTree = "<group>"; };
+		7AAA31711F74562000FFB69C /* EX_2.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = EX_2.vsh; path = shaders/EX_2.vsh; sourceTree = "<group>"; };
+		7AAA31741F74598500FFB69C /* EX_3.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = EX_3.fsh; path = shaders/EX_3.fsh; sourceTree = "<group>"; };
+		7AAA31751F74598500FFB69C /* EX_3.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = EX_3.vsh; path = shaders/EX_3.vsh; sourceTree = "<group>"; };
+		7AAA31781F745D7900FFB69C /* EX_4.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = EX_4.vsh; path = shaders/EX_4.vsh; sourceTree = "<group>"; };
+		7AAA31791F745D7900FFB69C /* EX_4.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = EX_4.fsh; path = shaders/EX_4.fsh; sourceTree = "<group>"; };
+		7AAA317C1F745F1400FFB69C /* EX_5.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = EX_5.fsh; path = shaders/EX_5.fsh; sourceTree = "<group>"; };
+		7AAA317D1F745F1400FFB69C /* EX_5.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = EX_5.vsh; path = shaders/EX_5.vsh; sourceTree = "<group>"; };
+		7AAA31801F74681000FFB69C /* EX_6.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = EX_6.fsh; path = shaders/EX_6.fsh; sourceTree = "<group>"; };
+		7AAA31811F74681000FFB69C /* EX_6.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = EX_6.vsh; path = shaders/EX_6.vsh; sourceTree = "<group>"; };
+		7ACBCEC91F74537D0072A86A /* EX_1.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = EX_1.fsh; path = shaders/EX_1.fsh; sourceTree = "<group>"; };
+		7ACBCECA1F74537D0072A86A /* EX_1.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = EX_1.vsh; path = shaders/EX_1.vsh; sourceTree = "<group>"; };
+		7ADDE9861F746EC1008DD859 /* ShaderDemo.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = ShaderDemo.fsh; path = shaders/extra/ShaderDemo.fsh; sourceTree = "<group>"; };
+		7ADDE9871F746EC1008DD859 /* ShaderDemo.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = ShaderDemo.vsh; path = shaders/extra/ShaderDemo.vsh; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7A172FDE1F6E71DA00F68E9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7A172FD81F6E71DA00F68E9F = {
+			isa = PBXGroup;
+			children = (
+				7A172FE31F6E71DA00F68E9F /* ShaderInitiation */,
+				7A172FE21F6E71DA00F68E9F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7A172FE21F6E71DA00F68E9F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7A172FE11F6E71DA00F68E9F /* ShaderInitiation.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7A172FE31F6E71DA00F68E9F /* ShaderInitiation */ = {
+			isa = PBXGroup;
+			children = (
+				7A172FF81F6E72A100F68E9F /* shaders */,
+				7A172FF71F6E729500F68E9F /* logic */,
+				7A4BC4BC1F719EBC0063FB97 /* music */,
+				7A172FE41F6E71DA00F68E9F /* AppDelegate.swift */,
+				7A172FE61F6E71DA00F68E9F /* ViewController.swift */,
+				7A172FE81F6E71DA00F68E9F /* Main.storyboard */,
+				7A172FEB1F6E71DA00F68E9F /* Assets.xcassets */,
+				7A172FED1F6E71DA00F68E9F /* LaunchScreen.storyboard */,
+				7A172FF01F6E71DA00F68E9F /* Info.plist */,
+			);
+			path = ShaderInitiation;
+			sourceTree = "<group>";
+		};
+		7A172FF71F6E729500F68E9F /* logic */ = {
+			isa = PBXGroup;
+			children = (
+				7A17300E1F6E76E600F68E9F /* FastFloatVectorMath.swift */,
+				7A17300F1F6E76E600F68E9F /* Geometry.swift */,
+				7A1730101F6E76E600F68E9F /* NoiseTexture.swift */,
+				7A1730111F6E76E600F68E9F /* ShaderProgram.swift */,
+				7A1730121F6E76E600F68E9F /* TextureLoader.swift */,
+				7A1730131F6E76E600F68E9F /* Uniformizable.swift */,
+				7A17301B1F6E76FF00F68E9F /* FilteredData.swift */,
+				7A17301D1F6E7B8000F68E9F /* FFT.swift */,
+			);
+			name = logic;
+			sourceTree = "<group>";
+		};
+		7A172FF81F6E72A100F68E9F /* shaders */ = {
+			isa = PBXGroup;
+			children = (
+				7ACBCEC91F74537D0072A86A /* EX_1.fsh */,
+				7AAA31701F74562000FFB69C /* EX_2.fsh */,
+				7AAA31741F74598500FFB69C /* EX_3.fsh */,
+				7AAA31791F745D7900FFB69C /* EX_4.fsh */,
+				7AAA317C1F745F1400FFB69C /* EX_5.fsh */,
+				7AAA31801F74681000FFB69C /* EX_6.fsh */,
+				7ADDE98C1F747649008DD859 /* vertex */,
+				7ADDE98B1F746EE8008DD859 /* extra */,
+			);
+			name = shaders;
+			sourceTree = "<group>";
+		};
+		7A4BC4BC1F719EBC0063FB97 /* music */ = {
+			isa = PBXGroup;
+			children = (
+				7A4BC4BD1F719EBC0063FB97 /* bensound-acousticbreeze.mp3 */,
+				7A4BC4BE1F719EBC0063FB97 /* bensound-buddy.mp3 */,
+				7A4BC4BF1F719EBC0063FB97 /* bensound-cute.mp3 */,
+				7A4BC4C01F719EBC0063FB97 /* bensound-dubstep.mp3 */,
+				7A4BC4C11F719EBC0063FB97 /* bensound-epic.mp3 */,
+				7A4BC4C21F719EBC0063FB97 /* bensound-funnysong.mp3 */,
+			);
+			path = music;
+			sourceTree = "<group>";
+		};
+		7ADDE98B1F746EE8008DD859 /* extra */ = {
+			isa = PBXGroup;
+			children = (
+				7ADDE9861F746EC1008DD859 /* ShaderDemo.fsh */,
+				7ADDE9871F746EC1008DD859 /* ShaderDemo.vsh */,
+			);
+			name = extra;
+			sourceTree = "<group>";
+		};
+		7ADDE98C1F747649008DD859 /* vertex */ = {
+			isa = PBXGroup;
+			children = (
+				7ACBCECA1F74537D0072A86A /* EX_1.vsh */,
+				7AAA31711F74562000FFB69C /* EX_2.vsh */,
+				7AAA31751F74598500FFB69C /* EX_3.vsh */,
+				7AAA31781F745D7900FFB69C /* EX_4.vsh */,
+				7AAA317D1F745F1400FFB69C /* EX_5.vsh */,
+				7AAA31811F74681000FFB69C /* EX_6.vsh */,
+			);
+			name = vertex;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7A172FE01F6E71DA00F68E9F /* ShaderInitiation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A172FF31F6E71DA00F68E9F /* Build configuration list for PBXNativeTarget "ShaderInitiation" */;
+			buildPhases = (
+				7A172FDD1F6E71DA00F68E9F /* Sources */,
+				7A172FDE1F6E71DA00F68E9F /* Frameworks */,
+				7A172FDF1F6E71DA00F68E9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShaderInitiation;
+			productName = ShaderInitiation;
+			productReference = 7A172FE11F6E71DA00F68E9F /* ShaderInitiation.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7A172FD91F6E71DA00F68E9F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = adrien.coye;
+				TargetAttributes = {
+					7A172FE01F6E71DA00F68E9F = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 7A172FDC1F6E71DA00F68E9F /* Build configuration list for PBXProject "ShaderInitiation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7A172FD81F6E71DA00F68E9F;
+			productRefGroup = 7A172FE21F6E71DA00F68E9F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7A172FE01F6E71DA00F68E9F /* ShaderInitiation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7A172FDF1F6E71DA00F68E9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A172FEF1F6E71DA00F68E9F /* LaunchScreen.storyboard in Resources */,
+				7A172FEC1F6E71DA00F68E9F /* Assets.xcassets in Resources */,
+				7ADDE9891F746EC1008DD859 /* ShaderDemo.vsh in Resources */,
+				7AAA31731F74562000FFB69C /* EX_2.vsh in Resources */,
+				7AAA317F1F745F1400FFB69C /* EX_5.vsh in Resources */,
+				7A4BC4C61F719EBC0063FB97 /* bensound-dubstep.mp3 in Resources */,
+				7A4BC4C81F719EBC0063FB97 /* bensound-funnysong.mp3 in Resources */,
+				7ACBCECB1F74537D0072A86A /* EX_1.fsh in Resources */,
+				7AAA31721F74562000FFB69C /* EX_2.fsh in Resources */,
+				7AAA317A1F745D7900FFB69C /* EX_4.vsh in Resources */,
+				7AAA31821F74681000FFB69C /* EX_6.fsh in Resources */,
+				7AAA31771F74598600FFB69C /* EX_3.vsh in Resources */,
+				7A172FEA1F6E71DA00F68E9F /* Main.storyboard in Resources */,
+				7A4BC4C41F719EBC0063FB97 /* bensound-buddy.mp3 in Resources */,
+				7ADDE9881F746EC1008DD859 /* ShaderDemo.fsh in Resources */,
+				7AAA31831F74681000FFB69C /* EX_6.vsh in Resources */,
+				7AAA317B1F745D7900FFB69C /* EX_4.fsh in Resources */,
+				7A4BC4C71F719EBC0063FB97 /* bensound-epic.mp3 in Resources */,
+				7AAA31761F74598600FFB69C /* EX_3.fsh in Resources */,
+				7AAA317E1F745F1400FFB69C /* EX_5.fsh in Resources */,
+				7A4BC4C31F719EBC0063FB97 /* bensound-acousticbreeze.mp3 in Resources */,
+				7ACBCECC1F74537D0072A86A /* EX_1.vsh in Resources */,
+				7A4BC4C51F719EBC0063FB97 /* bensound-cute.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7A172FDD1F6E71DA00F68E9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A17301A1F6E76E600F68E9F /* Uniformizable.swift in Sources */,
+				7A1730171F6E76E600F68E9F /* NoiseTexture.swift in Sources */,
+				7A17301C1F6E76FF00F68E9F /* FilteredData.swift in Sources */,
+				7A172FE71F6E71DA00F68E9F /* ViewController.swift in Sources */,
+				7A1730151F6E76E600F68E9F /* FastFloatVectorMath.swift in Sources */,
+				7A172FE51F6E71DA00F68E9F /* AppDelegate.swift in Sources */,
+				7A1730181F6E76E600F68E9F /* ShaderProgram.swift in Sources */,
+				7A1730191F6E76E600F68E9F /* TextureLoader.swift in Sources */,
+				7A17301E1F6E7B8000F68E9F /* FFT.swift in Sources */,
+				7A1730161F6E76E600F68E9F /* Geometry.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7A172FE81F6E71DA00F68E9F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7A172FE91F6E71DA00F68E9F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7A172FED1F6E71DA00F68E9F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7A172FEE1F6E71DA00F68E9F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7A172FF11F6E71DA00F68E9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7A172FF21F6E71DA00F68E9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7A172FF41F6E71DA00F68E9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ShaderInitiation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = adrien.coye.ShaderInitiation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		7A172FF51F6E71DA00F68E9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ShaderInitiation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = adrien.coye.ShaderInitiation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7A172FDC1F6E71DA00F68E9F /* Build configuration list for PBXProject "ShaderInitiation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A172FF11F6E71DA00F68E9F /* Debug */,
+				7A172FF21F6E71DA00F68E9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A172FF31F6E71DA00F68E9F /* Build configuration list for PBXNativeTarget "ShaderInitiation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A172FF41F6E71DA00F68E9F /* Debug */,
+				7A172FF51F6E71DA00F68E9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7A172FD91F6E71DA00F68E9F /* Project object */;
+}
