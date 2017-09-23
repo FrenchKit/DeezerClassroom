@@ -1,28 +1,38 @@
 # Resources
 
 Open `ShaderInitiation.xcodeproj`
+
 You want to edit `EX_<n>.fsh` in the `Shaders` folder.
+
+Change the shader used by the app in `ViewController.swift`
+
 
 ### EX_1 hello world
 
 A pixel's color is expressed as a vector  `vec4(r, g ,b ,a);`
+
 The pixel color should be assigned to `gl_FragColor`
+
 Now fill the screen with blue color
+
 
 ### EX_2 draw a rectangle at the center of the screen (0.0, 0.0)
 
-Using the utility function `is_coordinates_within_rectangle`.
-Draw a white rectangle.
+Using the utility function `is_coordinates_within_rectangle`, draw a white rectangle.
+
 You can use `DZR_RECTANGLE` as input parameter to get the correct size.
 
 
 ### EX_3 Translate the rectangle
 
 Translate the origin of the Cartesian coordinate system.
+
 We want to draw the logo from the bottom right of it.
+
 To achieve this we need to translate our coordinate system to the correct position.
 
 More on this here https://thebookofshaders.com/08/
+
 
 ### EX_4 Draw a column using a for loop
 
@@ -40,12 +50,19 @@ Using the `color_for_index_path` helper function, draw the Deezer logo with colo
 
 ### EX_6 Animation !
 
-Using the helper function `num_of_rectangles_for_column_animated` animate the logo
-Uncomment `setupPlayer()` in `ViewController.swift`
+Using the helper function `num_of_rectangles_for_column_animated` animate the logo.
+
+Uncomment `setupPlayer()` in `ViewController.swift` for audio
+
+
+For smooth animations on the simulator, you might want to use a lower resolution.
+
+Uncomment `glkView.contentScaleFactor = 0.25` in `ViewController.swift` to do so.
+
 
 ### Bonus steps
 
-Using HSV color space and `u_time` uniform to change colors of the logo over time.
+Using HSV color space and `u_time` uniform, change the logo's colors over time.
 
 Code use example provided in `ShaderDemo.vsh`
 
