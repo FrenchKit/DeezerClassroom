@@ -115,7 +115,7 @@ class ViewController: GLKViewController {
         
         // fix performance for the iOS simulator, rendering at 1/4 resolution
         if Platform.isSimulator {
-            glkView.contentScaleFactor = 0.25
+//            glkView.contentScaleFactor = 0.25
         }
         
         preferredFramesPerSecond = 60
